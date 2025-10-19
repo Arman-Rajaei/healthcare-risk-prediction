@@ -1,19 +1,47 @@
-# Multimodal Healthcare Risk Prediction
+# 🩺 Multimodal Healthcare Risk Prediction
 
-End-to-end pipeline that integrates clinical and physiological features to predict patient risk and provide model explanations.
+An end-to-end machine learning pipeline that integrates **clinical** and **physiological** features to predict patient risk and provide **explainable model insights**.
 
-## What’s inside
-- Data preprocessing (`src/preprocessing.py`)
-- Modeling (Logistic Regression & Random Forest) (`src/modeling.py`)
-- Explainability with SHAP (`src/explainability.py`)
-- Example notebook: `notebooks/risk_prediction_demo.ipynb`
+---
 
-## Data
-Data files are **not included** in this repository due to privacy.  
-To run the notebook, place your dataset at `data/healthcare_dataset.csv` and update the paths if needed.  
-A **data dictionary** is provided in `docs/data_dictionary.md`.
+## 📂 Project Structure
 
-## Quickstart
+- **`src/preprocessing.py`** — Data cleaning and feature engineering  
+- **`src/modeling.py`** — Model training (Logistic Regression & Random Forest)  
+- **`src/explainability.py`** — Model interpretation using SHAP  
+- **`notebooks/risk_prediction_demo.ipynb`** — Interactive end-to-end workflow  
+- **`reports/figures/`** — Saved visualizations (optional)
+
+---
+
+## 🧠 Data
+
+Data files are **not included** in this repository for privacy reasons.  
+To run the notebook, place your dataset in:
+
+
+A **data dictionary** describing all features and units is available in:  
+`docs/data_dictionary.md`
+
+---
+
+## ⚙️ Quickstart
+
 ```bash
+# 1. Clone the repository
+git clone https://github.com/<your-username>/healthcare-risk.git
+cd healthcare-risk
+
+# 2. Install dependencies
 pip install -r requirements.txt
+
+# 3. Launch Jupyter Lab / Notebook
 jupyter lab
+```
+## 🧩 Requirements
+See `requirements.txt` for dependencies (Python ≥ 3.8, scikit-learn, shap, matplotlib, seaborn, pandas, numpy).
+
+---
+
+## 🪪 License
+MIT License — see [`LICENSE`](LICENSE) for details.
