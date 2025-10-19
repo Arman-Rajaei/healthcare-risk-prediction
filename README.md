@@ -50,6 +50,16 @@ Random Forest achieved slightly better classification on both classes, showing h
   <img src="reports/figures/confusion-matrix.png" alt="Confusion Matrices" width="800">
 </p>
 
+### 🔹 ROC Curve Comparison
+
+The ROC curve below compares the classification performance of the **Logistic Regression** and **Random Forest** models.
+
+Both models perform well (AUC > 0.85), but Logistic Regression achieved slightly higher sensitivity and a more balanced trade-off between true and false positives (AUC = 0.91).  
+The diagonal dashed line represents random guessing (AUC = 0.5), while curves closer to the top-left corner indicate better discrimination.
+
+<p align="center">
+  <img src="reports/figures/ROC_Curve.png" alt="ROC Curve Comparison" width="650">
+</p>
 ---
 
 ## ⚙️ Quickstart
